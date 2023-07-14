@@ -91,3 +91,16 @@ document.getElementsByClassName("txt")
 
 //.........................................................................................................//
 //.........................................................................................................//
+//Event handling 
+//in javascript button click and like icon tab are examples of user driven events
+<button type="button" class="btn btn-lg btn-primary" onclick="clickHandler()">
+    Primary button
+</button>
+//javascript can listen for these events, the function that handles captured events
+//is known as EVENT HANDLER (using add event listener method)
+//example:we want to listen to click event on the <body> of example website
+const target = document.querySelector("body") //we assign body object that we called to variable target
+function handleClick() {
+    console.log("clicked the body")
+} 
+//next step is to
