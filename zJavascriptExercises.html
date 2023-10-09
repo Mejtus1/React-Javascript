@@ -1,0 +1,223 @@
+// 1. print "Hello World"
+<html> 
+    <head>
+    <title></title>
+    <script type="text/javascript">
+       console.log("Hello World");
+       alert("Hello world"); //displays alert box over current window 
+    </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+// 2. add two numbers together 
+<html> 
+    <head>
+    <title></title>
+    <script type="text/javascript">
+        Let a = prompt("Please enter first number", "");
+        Let b = prompt("Please enter second number","");
+        var c = parseInt(a) + parseInt(b);
+        console.log("The sum of "+a+" and "+b+" is: "+c);
+    </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+// 3. Square root of a number 
+<html> 
+    <head>
+    <title></title>
+    <script type="text/javascript">
+       var a = prompt("Please enter a number","");
+        var b = Math.sqrt(a);
+        console.log(b);
+    </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+// 4. Calculate the area of a triangle using javascript 
+<html> 
+    <head>
+    <title></title>
+    <script type="text/javascript">
+       var base = prompt("Please enter the base value");
+        var height = prompt("Please enter the height value");
+        var area = (base * height)/2;
+        console.log(area);
+    </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+// 5. Convert km to miles 
+<html> 
+    <head>
+    <title></title>
+    <script type="text/javascript">
+       function convert() { 
+          var kms = document.getElementById("data").value;
+         const factor = 0.621371;
+         var miles = kms * factor;
+         document.getElementById("res").innerText = miles + " Miles";
+        } 
+    </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+// 6. Convert Celsius to fahrenheit 
+<html> 
+    <head>
+    <title></title>
+    <script type="text/javascript">
+      function convert() {
+        var c = document.getElementById("data").value;
+        var f = (c * 1.8) + 32;
+        document.getElementById("res").innerText = `${c} C = ${f}`;
+    } 
+    </script>
+    </head>
+    <body>
+        <input type="" name="" id="data" /> C
+        <br/>
+        <button onclick="convert()">Convert</button>
+        <h1 id="res"></h1>
+    </body>
+</html>
+
+// 7. Check if a number is Positive, Negative or Zero 
+<html> 
+    <head>
+    <title></title>
+    <script type="text/javascript">
+      function check(){
+        var value = document-getElementById("data").value;
+        if(value > 0 ){ 
+            res = `${value} is a Positive Number`;
+        }
+        else if(value < 0){
+            res = `${value} is a negative number`;
+        }
+        else if(value == 0){
+            res = `${value} is a zero`;
+        }
+        else{
+            res = `${value} is not a Number`;
+        }
+        document.getElementById("res").innerText = res;
+    }
+    </script>
+    </head>
+    <body>
+        <input type="" name="" id="data" /> C
+        <br/>
+        <button onclick="convert()">Convert</button>
+        <h1 id="res"></h1>
+    </body>
+</html>
+
+
+// 8. Check Prime Number 
+<html> 
+    <head>
+    <title></title>
+    <script type="text/javascript">
+        var number = prompt("please enter your number");
+      if(number == 1){
+            console.log(`${number} is neither prime nor composite number`);
+        }
+        else if(number < 1){
+            console.log(`${number} is not a prime number`);
+        }
+        else{
+            for(var i = 2; i<number; i++){
+            if(number%i == 0){
+                var res = `${number} is not a prime number`;
+            }
+            else{
+                var res = `${number} is a prime number`;
+            }  
+            }
+        console.log(res);
+    }
+    </script>
+    </head>
+    <body>
+        <input type="" name="" id="data" /> C
+        <br/>
+        <button onclick="convert()">Convert</button>
+        <h1 id="res"></h1>
+    </body>
+</html>
+
+
+// 9. Check the Number of Occurrences of a Character in the String 
+<html> 
+    <head>
+    <title></title>
+    <script type="text/javascript">
+     var string = prompt("Please enter a string");
+     var letter = prompt("Please enter a letter");
+     Let strLen = string.length;
+     var counter = 0;
+     for(var i = 0; i< strLen; i++){
+     if(string[i] == letter){
+        counter++;
+     }
+    }
+    console.log(`${string} => ${string} => ${counter}`);
+    </script>
+    </head>
+    <body>
+        <input type="" name="" id="data" /> C
+        <br/>
+        <button onclick="convert()">Convert</button>
+        <h1 id="res"></h1>
+    </body>
+</html>
+
+
+// 10. Check Whether a String Starts and Ends With certain characters 
+<html> 
+    <head>
+    <title></title>
+    <script type="text/javascript">
+        var string = prompt("Please enter a string:");
+        console.log(string);
+        var testStart = string.startWith("W");
+        var testEnd = string.endsWith("e");
+        if(testStart == true && testEnd == true){ 
+            console.log(`${string} starts with W and ends with e`);
+        }
+        else if(testStart == true && testEnd == false){
+            console.log(`${string} starts with W`);
+        }
+        else if(testStart == false && testEnd == true){
+            console.log(`${string} is a zero`);
+        }
+        else{
+            console.log(`${string} end with e`);
+        }
+    </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
